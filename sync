@@ -14,4 +14,7 @@ git config --global user.email adeveloper79@gmail.com
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again with -j8
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
- 
+# Sync stuffs
+git clone https://github.com/LineageOS/android_device_asus_Z01R device/asus/Z01R --depth=1
+git clone https://github.com/TheMuppets/proprietary_vendor_asus --single-branch -b lineage-17.1 vendor/asus --depth=1
+git clone https://github.com/LineageOS/android_kernel_asus_sdm845 kernel/asus/Z01R --depth=1
