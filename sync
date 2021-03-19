@@ -17,4 +17,4 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # Sync stuffs
 git clone https://github.com/LineageOS/android_device_asus_Z01R device/asus/Z01R --depth=1
 git clone https://github.com/TheMuppets/proprietary_vendor_asus --single-branch -b lineage-17.1 vendor/asus --depth=1
-git clone https://github.com/LineageOS/android_kernel_asus_sdm845 kernel/asus/Z01R --depth=1
+git clone https://github.com/LineageOS/android_kernel_asus_sdm845 kernel/asus/sdm845 --depth=1
