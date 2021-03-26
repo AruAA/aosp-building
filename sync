@@ -1,7 +1,7 @@
 #!/bin/bash
 
-MANIFEST=git://github.com/LineageOS/android.git
-BRANCH=lineage-17.1
+MANIFEST=git://github.com/StyxProject/manifest.git
+BRANCH=R
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -15,6 +15,6 @@ git config --global user.email adeveloper79@gmail.com
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # Sync stuffs
-git clone https://github.com/LineageOS/android_device_asus_Z01R device/asus/Z01R --depth=1
-git clone https://github.com/TheMuppets/proprietary_vendor_asus --single-branch -b lineage-17.1 vendor/asus --depth=1
-git clone https://github.com/LineageOS/android_kernel_asus_sdm845 kernel/asus/sdm845 --depth=1
+git clone https://gitlab.com/adeveloper79/r_z01r.git device/asus/Z01R --depth=1
+git clone https://github.com/5z-devs/proprietary_vendor_asus.git --single-branch -b 11 vendor/asus --depth=1
+git clone https://github.com/BlissRoms-Devices/android_kernel_asus_sdm845.git kernel/asus/sdm845 --depth=1
