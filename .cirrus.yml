@@ -4,10 +4,10 @@ env: # Environt variable to pass to all tasks
     
 task:
     name: adeveloper79
-    timeout_in: 120m
+    timeout_in: 180m
     container:
       image: apon77/aosp:latest
-      cpu: 16
+      cpu: 12
       memory: 20G
     sync_script:
       - ./sync
