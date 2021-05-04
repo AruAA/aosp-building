@@ -4,7 +4,7 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 
 # Normal build steps
 . build/envsetup.sh
-lunch styx_Z01R-userdebug
+lunch evolution_Z01R-userdebug
 
 make_metalava(){
 	mka api-stubs-docs
@@ -13,7 +13,7 @@ make_metalava(){
 }
 
 make_rom(){
-	m styx-ota -j16
+	mka bacon -j16
 	zip=$(up out/target/product/Z01R/*zip)
 	echo " "
 	echo "$zip"
