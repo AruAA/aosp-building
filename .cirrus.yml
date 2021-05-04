@@ -4,11 +4,11 @@ env: # Environt variable to pass to all tasks
     
 task:
     name: AruAA
-    timeout_in: 180m
+    timeout_in: 120m
     container:
       image: apon77/aosp:latest
-      cpu: 12
-      memory: 20G
+      cpu: 8
+      memory: 32G
     sync_script:
       - ./sync
     build_script:
