@@ -3,7 +3,7 @@ env: # Environt variable to pass to all tasks
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
     
 task:
-    name: adeveloper79
+    name: AruAA
     timeout_in: 180m
     container:
       image: apon77/aosp:latest
