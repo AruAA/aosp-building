@@ -18,3 +18,5 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 git clone https://github.com/AruAA/android_device_asus_Z01R-2.git --single-branch -b evo device/asus/Z01R --depth=1
 git clone https://github.com/5z-devs/proprietary_vendor_asus.git --single-branch -b lineage-18.1 vendor/asus --depth=1
 git clone https://github.com/kailashrs/kernel_z01r.git --single-branch -b eleven kernel/asus/sdm845 --depth=1
+git clone https://github.com/AOSPA/android_prebuilts_gcc_linux-x86_aarch64_aarch64-elf --single-branch -b master prebuilts/gcc/linux-x86/aarch64/aarch64-elf --depth=1
+git clone https://www.github.com/AOSPA/android_prebuilts_gcc_linux-x86_arm_arm-eabi --single-branch -b master prebuilts/gcc/linux-x86/arm/arm-eabi --depth=1
